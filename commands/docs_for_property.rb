@@ -5,7 +5,7 @@ require 'properties'
 # Lookup current word as a CSS property on w3c.org
 #
 command "Documentation for Property" do |cmd|
-  cmd.key_binding = [ :M1, :M2, :H ] # TODO Get right keybinding
+  cmd.key_binding = "M1+M2+H"
   cmd.output = :show_as_html
   cmd.input = :selection 
   cmd.scope = "source.css"

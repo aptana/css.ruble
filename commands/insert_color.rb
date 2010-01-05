@@ -3,7 +3,7 @@ require 'radrails/ui'
 require 'colors'
  
 command "Insert Color..." do |cmd|
-  cmd.key_binding = [ :M1, :M2, :C ]
+  cmd.key_binding = "M1+M2+C"
   cmd.output = :replace_selection
   cmd.input = :selection 
   cmd.scope = "source.css"

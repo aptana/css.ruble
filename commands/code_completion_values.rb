@@ -3,7 +3,7 @@ require 'radrails/ui'
 require 'property_values'
 
 command "CodeCompletion CSS Property Values" do |cmd|
-  cmd.key_binding = [ "~" ] # FIXME Keybinding is incorrect
+  cmd.key_binding = "M1+SHIFT+`" # FIXME: should be "M1+~"
   cmd.output = :insert_as_snippet
   #cmd.input = [:selection, :line]
   cmd.input = :selection

@@ -1,7 +1,7 @@
 require "radrails"
 
 command "Validate Selected CSS" do |cmd|
-  cmd.key_binding = [ :M1, :shift, :V ] # TODO Get right keybinding
+  cmd.key_binding = "M1+SHIFT+V"
   cmd.output = :show_as_html
   #cmd.input = [:selection, :scope]
   cmd.input = :selection
