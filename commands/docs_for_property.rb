@@ -10,8 +10,8 @@ command "Documentation for Property" do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    cur_line = context.environment['TM_CURRENT_LINE']
-    cur_word = context.environment['TM_CURRENT_WORD']
+    cur_line = ENV['TM_CURRENT_LINE']
+    cur_word = ENV['TM_CURRENT_WORD']
 
     # since dash (Ô-Õ) is not a word character, extend current word to neighboring word and dash characters
     prop_name = /[-\w]*#{Regexp.escape cur_word}[-\w]*/.match(cur_line)[0]

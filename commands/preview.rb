@@ -7,6 +7,6 @@ command "Preview" do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    preview_css(context.in.read, context.environment)
+    preview_css(context.in.read, ENV)
   end
 end
