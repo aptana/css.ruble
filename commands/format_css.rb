@@ -6,7 +6,7 @@ command "Format CSS" do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    code = context.in.read
+    code = STDIN.read
     property_indent = "" # Set to multiple spaces or tabs if you want properties to be indented additionally
     # TODO Figure out initial indent and then use that in substitutions to properly indent
     code.gsub!(/({|;)\s*([-\w]+:)\s*(?=\S)/im) {|match| "#{$1}\n#{property_indent}#{$2} " }

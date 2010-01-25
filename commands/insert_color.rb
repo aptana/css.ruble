@@ -8,7 +8,7 @@ command "Insert Color..." do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    colour = context.in.read    
+    colour = STDIN.read    
     if colour.length > 0 and colour[0] != ?#
       colour.downcase!
       # Convert named colours to their hex values

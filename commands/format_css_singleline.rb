@@ -6,7 +6,7 @@ command "Format CSS Single-line" do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    code = context.in.read
+    code = STDIN.read
     code.gsub!(/\n{3,}/im, "\n\n")
     code.gsub!(/[ \t]+/im, " ")
     code.gsub!(/(?m)([;:])\s+/im) {|match| "#{$1}" }

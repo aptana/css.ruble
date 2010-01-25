@@ -9,7 +9,7 @@ command "Validate Selected CSS" do |cmd|
   cmd.invoke do |context|
     str = '<html><head><meta http-equiv="Refresh" content="0; URL='
     str << 'http://jigsaw.w3.org/css-validator/validator?warning=1&profile=none&usermedium=all&text='
-    scope = context.in.read
+    scope = STDIN.read
     scope.gsub!(/<\/?style.*?>/, '')
     if !scope.nil? and scope.size > 0
       scope.each_byte do |b|

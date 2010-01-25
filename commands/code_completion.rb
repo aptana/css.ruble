@@ -10,7 +10,7 @@ command "CodeCompletion CSS Properties" do |cmd|
   cmd.scope = "source.css"
   cmd.invoke do |context|
     options = CSS_PROPERTIES.keys # TODO Actual property list in Textmate is slightly different
-    prefix = context.in.read
+    prefix = STDIN.read
     options = options.select {|word| word.index(prefix) == 0 } if !prefix.nil? and prefix.size > 0
     index = RadRails::UI.menu(options)
     options[index]
