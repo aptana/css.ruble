@@ -12,7 +12,7 @@ END
 CSS bundle for RadRails 3
 END
 
-  bundle.repository = "git://github.com/aptana/css-rrbundle.git"
+  bundle.repository = "git://github.com/aptana/css-ruble.git"
 
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|
