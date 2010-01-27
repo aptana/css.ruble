@@ -1,4 +1,4 @@
-require "radrails"
+require 'ruble'
 require 'preview_generator'
  
 command "Preview" do |cmd|

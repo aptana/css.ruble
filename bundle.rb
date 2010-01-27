@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
 
 # its ruby, so this just adds commands/snippets in bundle (or replaces those with same name)
 # many ruby files could add to a single bundle
@@ -9,10 +9,10 @@ bundle 'CSS' do |bundle|
 END
 
   bundle.description = <<END
-CSS bundle for RadRails 3
+CSS bundle for RadRails
 END
 
-  bundle.repository = "git://github.com/aptana/css-rrbundle.git"
+  bundle.repository = "git://github.com/aptana/css-ruble.git"
 
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|

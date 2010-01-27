@@ -1,5 +1,5 @@
-require 'radrails'
-require 'radrails/ui'
+require 'ruble'
+require 'ruble/ui'
 require 'selectors'
 
 command "CodeCompletion CSS" do |cmd|
@@ -12,7 +12,7 @@ command "CodeCompletion CSS" do |cmd|
     options = SELECTORS.keys
     prefix = STDIN.read
     options = options.select {|word| word.index(prefix) == 0 } if !prefix.nil? and prefix.size > 0
-    index = RadRails::UI.menu(options)
+    index = Ruble::UI.menu(options)
     options[index]
   end
 end

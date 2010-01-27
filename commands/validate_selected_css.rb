@@ -1,4 +1,4 @@
-require "radrails"
+require 'ruble'
 
 command "Validate Selected CSS" do |cmd|
   cmd.key_binding = "M1+SHIFT+V"

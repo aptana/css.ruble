@@ -1,4 +1,4 @@
-require 'radrails'
+require 'ruble'
  
 command "Format CSS Single-line" do |cmd|
   cmd.key_binding = "M1+M2+F"
