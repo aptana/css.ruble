@@ -4,15 +4,13 @@ require 'ruble'
 # many ruby files could add to a single bundle
 bundle 'CSS' do |bundle|
   bundle.author = "Christopher Williams"
-  bundle.copyright = <<END
-© Copyright 2009 Aptana Inc. Distributed under GPLv3 and Aptana Source license.
-END
-
-  bundle.description = <<END
-CSS bundle for RadRails
-END
-
+  bundle.copyright = '© Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.'
+  bundle.description = "CSS bundle for RadRails"
   bundle.repository = "git://github.com/aptana/css-ruble.git"
+  # Set up folding
+  foldingStartMarker = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
+  foldingStopMarker = /(?<!\*)\*\*\/|^\s*\}/
+  bundle.set_folding_markers('source.css', foldingStartMarker, foldingStopMarker)
 
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|
