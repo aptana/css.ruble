@@ -6,7 +6,7 @@ bundle 'CSS' do |bundle|
   bundle.author = "Christopher Williams"
   bundle.copyright = '© Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.'
   bundle.description = "CSS bundle for RadRails"
-  bundle.repository = "git://github.com/aptana/css-ruble.git"
+  bundle.repository = "git://github.com/aptana/css.ruble.git"
   # Set up folding
   foldingStartMarker = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
   foldingStopMarker = /(?<!\*)\*\*\/|^\s*\}/
