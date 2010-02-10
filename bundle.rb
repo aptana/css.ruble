@@ -10,7 +10,7 @@ bundle 'CSS' do |bundle|
   # Set up folding
   foldingStartMarker = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
   foldingStopMarker = /(?<!\*)\*\*\/|^\s*\}/
-  bundle.set_folding_markers('source.css', foldingStartMarker, foldingStopMarker)
+  bundle.folding['source.css'] = foldingStartMarker, foldingStopMarker
 
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|
