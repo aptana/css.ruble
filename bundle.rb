@@ -4,7 +4,7 @@ require 'ruble'
 # many ruby files could add to a single bundle
 bundle 'CSS' do |bundle|
   bundle.author = "Christopher Williams"
-  bundle.copyright = '© Copyright 2010 Aptana Inc. Distributed under GPLv3 and Aptana Source license.'
+  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.description = "CSS bundle for RadRails"
   bundle.repository = "git://github.com/aptana/css.ruble.git"
   # Set up folding
