@@ -2,9 +2,10 @@ require 'ruble'
 
 # its ruby, so this just adds commands/snippets in bundle (or replaces those with same name)
 # many ruby files could add to a single bundle
-bundle 'CSS' do |bundle|
+bundle do |bundle|
   bundle.author = "Christopher Williams"
   bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.display_name = 'CSS'
   bundle.description = "CSS bundle for RadRails"
   bundle.repository = "git://github.com/aptana/css.ruble.git"
   # Set up folding
