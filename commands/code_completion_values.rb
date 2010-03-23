@@ -3,7 +3,7 @@ require 'ruble/ui'
 require 'property_values'
 
 command "CodeCompletion CSS Property Values" do |cmd|
-  cmd.key_binding = "M3+ESCAPE"
+  cmd.key_binding = "CTRL+SPACE"
   cmd.output = :insert_as_snippet
   #cmd.input = [:selection, :line]
   cmd.input = :selection
