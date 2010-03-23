@@ -9,10 +9,14 @@ command "CodeCompletion CSS" do |cmd|
   cmd.input = :selection
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    options = SELECTORS.keys
+    options = SELECTORS
     prefix = STDIN.read
     options = options.select {|word| word.index(prefix) == 0 } if !prefix.nil? and prefix.size > 0
-    index = Ruble::UI.menu(options)
-    options[index]
+    if options && !options.empty?
+      index = Ruble::UI.menu(options)
+      options[index]
+    else
+      prefix
+    end
   end
 end

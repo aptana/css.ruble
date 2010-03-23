@@ -12,7 +12,11 @@ command "CodeCompletion CSS Property Values" do |cmd|
     options = CSS_PROPERTY_VALUES
     prefix = STDIN.read
     options = options.select {|word| word.index(prefix) == 0 } if !prefix.nil? and prefix.size > 0
-    index = Ruble::UI.menu(options)
-    options[index]
+    if options && !options.empty?
+      index = Ruble::UI.menu(options)
+      options[index]
+    else
+      prefix
+    end
   end
 end
