@@ -28,12 +28,6 @@ bundle do |bundle|
     css_menu.separator
     css_menu.command "Insert Color..."
     css_menu.separator 
-    # css_menu.menu "CodeCompletion" do |completion_menu|
-    #   completion_menu.command "CodeCompletion CSS"
-    #   completion_menu.command "CodeCompletion CSS Properties"
-    #   completion_menu.command "CodeCompletion CSS Property Values"
-    # end
-    # css_menu.separator
     css_menu.command "Format CSS"
     css_menu.command "Format CSS Single-line"
   end
