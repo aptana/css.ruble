@@ -4,7 +4,7 @@ require 'ruble'
 # many ruby files could add to a single bundle
 bundle do |bundle|
   bundle.author = "Christopher Williams"
-  bundle.copyright = "© Copyright 2010 Aptana Inc. Distributed under the MIT license."
+  bundle.copyright = "ï¿½ Copyright 2010 Aptana Inc. Distributed under the MIT license."
   bundle.display_name = 'CSS'
   bundle.description = "CSS bundle for RadRails"
   bundle.repository = "git://github.com/aptana/css.ruble.git"
@@ -28,12 +28,12 @@ bundle do |bundle|
     css_menu.separator
     css_menu.command "Insert Color..."
     css_menu.separator 
-    css_menu.menu "CodeCompletion" do |completion_menu|
-      completion_menu.command "CodeCompletion CSS"
-      completion_menu.command "CodeCompletion CSS Properties"
-      completion_menu.command "CodeCompletion CSS Property Values"
-    end
-    css_menu.separator
+    # css_menu.menu "CodeCompletion" do |completion_menu|
+    #   completion_menu.command "CodeCompletion CSS"
+    #   completion_menu.command "CodeCompletion CSS Properties"
+    #   completion_menu.command "CodeCompletion CSS Property Values"
+    # end
+    # css_menu.separator
     css_menu.command "Format CSS"
     css_menu.command "Format CSS Single-line"
   end
