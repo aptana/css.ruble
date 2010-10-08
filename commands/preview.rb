@@ -1,5 +1,4 @@
 require 'ruble'
-require 'preview_generator'
  
 command "Preview" do |cmd|
   cmd.key_binding = "M1+M2+P"
@@ -7,6 +6,7 @@ command "Preview" do |cmd|
   cmd.input = :selection 
   cmd.scope = "source.css"
   cmd.invoke do |context|
-    preview_css(STDIN.read, ENV)
+    require 'preview_generator'
+    preview_css($stdin.read, ENV)
   end
 end
