@@ -41,3 +41,5 @@ env "source.css" do |e|
   e.delete('TM_COMMENT_END_2')
   e['TM_COMMENT_DISABLE_INDENT'] = 'yes'
 end
+
+smart_typing_pairs["source.css"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', "'", "'", '`', '`']
