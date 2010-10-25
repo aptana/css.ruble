@@ -1,7 +1,6 @@
 require 'ruble'
  
 command "Format CSS Single-line" do |cmd|
-  cmd.key_binding = "M1+M2+F"
   cmd.output = :replace_selection
   cmd.input = :selection 
   cmd.scope = "source.css"

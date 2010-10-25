@@ -28,7 +28,6 @@ bundle do |bundle|
     css_menu.separator
     css_menu.command "Insert Color..."
     css_menu.separator 
-    css_menu.command "Format CSS"
     css_menu.command "Format CSS Single-line"
   end
 end
@@ -42,4 +41,4 @@ env "source.css" do |e|
   e['TM_COMMENT_DISABLE_INDENT'] = 'yes'
 end
 
-smart_typing_pairs["source.css"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'Ò', 'Ó', "'", "'", '`', '`']
+smart_typing_pairs["source.css"] = ['"', '"', '(', ')', '{', '}', '[', ']', 'ï¿½', 'ï¿½', "'", "'", '`', '`']
