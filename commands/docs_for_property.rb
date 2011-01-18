@@ -12,7 +12,7 @@ command "Documentation for Property" do |cmd|
     cur_line = ENV['TM_CURRENT_LINE']
     cur_word = ENV['TM_CURRENT_WORD']
 
-    # since dash (Ô-Õ) is not a word character, extend current word to neighboring word and dash characters
+    # since dash ('-') is not a word character, extend current word to neighboring word and dash characters
     prop_name = /[-\w]*#{Regexp.escape cur_word}[-\w]*/.match(cur_line)[0]
 
     require 'properties'
