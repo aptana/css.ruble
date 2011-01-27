@@ -1,7 +1,65 @@
 !!com.aptana.scripting.model.BundleElement
-author: null
+author: Christopher Williams
 children:
-- !command
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: Documentation for Property
+    customProperties: null
+    displayName: Documentation for Property
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Validate Selected CSS
+    customProperties: null
+    displayName: Validate Selected CSS
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Preview
+    customProperties: null
+    displayName: Preview
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Insert Color...
+    customProperties: null
+    displayName: Insert Color...
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Format CSS Single-line
+    customProperties: null
+    displayName: Format CSS Single-line
+    path: bundle.rb
+    scope: null
+  commandName: CSS
+  customProperties: null
+  displayName: CSS
+  path: bundle.rb
+  scope: source.css
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-c3c4063b-caff-4fc2-9d92-82ddfe74666d,
+  path: bundle.rb, scope: source.css}
+- !!com.aptana.scripting.model.SmartTypingPairsElement
+  customProperties: null
+  displayName: smart_typing_pairs-e0cfd047-9a2d-403b-b7bf-e0b8dc608d11
+  pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003, &id004 '`',
+    *id004]
+  path: bundle.rb
+  scope: source.css
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Documentation for Property
@@ -14,11 +72,11 @@ children:
   runType: current_thread
   scope: source.css
   workingDirectoryType: UNDEFINED
-- !command {async: false, customProperties: null, displayName: Format CSS Single-line,
-  inputPath: null, keyBindingMap: null, outputPath: null, outputType: replace_selection,
-  path: commands/format_css_singleline.rb, runType: current_thread, scope: source.css,
-  workingDirectoryType: UNDEFINED}
-- !command
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: Format CSS Single-line, inputPath: null, keyBindingMap: null, outputPath: null,
+  outputType: replace_selection, path: commands/format_css_singleline.rb, runType: current_thread,
+  scope: source.css, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Insert Color...
@@ -31,7 +89,7 @@ children:
   runType: current_thread
   scope: source.css
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Preview
@@ -44,7 +102,7 @@ children:
   runType: current_thread
   scope: source.css
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Validate Selected CSS
@@ -1462,16 +1520,16 @@ children:
   displayName: CSS Template, filetype: '*.css', inputPath: null, keyBindingMap: null,
   outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
   scope: null, workingDirectoryType: UNDEFINED}
-copyright: ¬© Copyright 2010 Aptana Inc. Distributed under the MIT license.
+copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
-decreaseIndentMarkers: {!scope 'source.css': &id001 !regexp '(?-mix:(?<!\*)\*\*\/|^\s*\})'}
+decreaseIndentMarkers: &id005 {}
 description: CSS bundle for RadRails
 displayName: CSS
-fileTypeRegistry: {}
-fileTypes: []
-foldingStartMarkers: {!scope 'source.css': &id002 !regexp '(?-mix:\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S)))'}
-foldingStopMarkers: {!scope 'source.css': *id001}
-increaseIndentMarkers: {!scope 'source.css': *id002}
+fileTypeRegistry: *id005
+fileTypes: *id001
+foldingStartMarkers: *id005
+foldingStopMarkers: *id005
+increaseIndentMarkers: *id005
 license: null
 licenseUrl: null
 path: bundle.rb
