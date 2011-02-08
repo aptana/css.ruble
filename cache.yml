@@ -50,11 +50,11 @@ children:
   displayName: CSS
   path: bundle.rb
   scope: source.css
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-c3c4063b-caff-4fc2-9d92-82ddfe74666d,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-5eec2e13-794d-45a7-9342-038d4f9d9cb5,
   path: bundle.rb, scope: source.css}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-e0cfd047-9a2d-403b-b7bf-e0b8dc608d11
+  displayName: smart_typing_pairs-eba5ee25-44e8-46ef-938e-870ac963d4e8
   pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003, &id004 '`',
     *id004]
   path: bundle.rb
@@ -63,6 +63,7 @@ children:
   async: false
   customProperties: null
   displayName: Documentation for Property
+  input: [selection]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+H]
@@ -72,14 +73,24 @@ children:
   runType: current_thread
   scope: source.css
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
-  displayName: Format CSS Single-line, inputPath: null, keyBindingMap: null, outputPath: null,
-  outputType: replace_selection, path: commands/format_css_singleline.rb, runType: current_thread,
-  scope: source.css, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Format CSS Single-line
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/format_css_singleline.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Insert Color...
+  input: [selection]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+C]
@@ -93,6 +104,7 @@ children:
   async: false
   customProperties: null
   displayName: Preview
+  input: [selection]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
@@ -106,6 +118,7 @@ children:
   async: false
   customProperties: null
   displayName: Validate Selected CSS
+  input: [selection]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [M1+SHIFT+V]
@@ -121,6 +134,7 @@ children:
     prefix_values: ['!']
   displayName: '!important CSS'
   expansion: ${1:!important}
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -135,6 +149,7 @@ children:
     prefix_values: [background]
   displayName: 'background-attachment: scroll/fixed'
   expansion: 'background-attachment: ${1:scroll/fixed};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -149,6 +164,7 @@ children:
     prefix_values: [background]
   displayName: 'background-color: hex'
   expansion: 'background-color: #${1:DDD};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -163,6 +179,7 @@ children:
     prefix_values: [background]
   displayName: 'background-color: name'
   expansion: 'background-color: ${1:red};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -177,6 +194,7 @@ children:
     prefix_values: [background]
   displayName: 'background-color: rgb'
   expansion: 'background-color: rgb(${1:255},${2:255},${3:255});$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -191,6 +209,7 @@ children:
     prefix_values: [background]
   displayName: 'background-color: transparent'
   expansion: 'background-color: transparent;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -205,6 +224,7 @@ children:
     prefix_values: [background]
   displayName: 'background-image: none'
   expansion: 'background-image: none;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -219,6 +239,7 @@ children:
     prefix_values: [background]
   displayName: 'background-image: url'
   expansion: 'background-image: url($1);$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -234,6 +255,7 @@ children:
   displayName: 'background-position: position'
   expansion: 'background-position: ${1:top left/top center/top right/center left/center
     center/center right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -248,6 +270,7 @@ children:
     prefix_values: [background]
   displayName: 'background-repeat: r/r-x/r-y/n-r'
   expansion: 'background-repeat: ${1:repeat/repeat-x/repeat-y/no-repeat};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -264,6 +287,7 @@ children:
   expansion: 'background:${6: #${1:DDD}} url($2) ${3:repeat/repeat-x/repeat-y/no-repeat}
     ${4:scroll/fixed} ${5:top left/top center/top right/center left/center center/center
     right/bottom left/bottom center/bottom right/x-% y-%/x-pos y-pos};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -278,6 +302,7 @@ children:
     prefix_values: [border]
   displayName: 'border-bottom-color: color'
   expansion: 'border-bottom-color: #${1:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -292,6 +317,7 @@ children:
     prefix_values: [border]
   displayName: 'border-bottom-style: style'
   expansion: 'border-bottom-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -306,6 +332,7 @@ children:
     prefix_values: [border]
   displayName: 'border-bottom-width: size'
   expansion: 'border-bottom-width: ${1:1}px ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -320,6 +347,7 @@ children:
     prefix_values: [border]
   displayName: 'border-bottom: size style color'
   expansion: 'border-bottom: ${1:1}px ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -334,6 +362,7 @@ children:
     prefix_values: [border]
   displayName: 'border-color: color'
   expansion: 'border-color: ${1:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -348,6 +377,7 @@ children:
     prefix_values: [border]
   displayName: 'border-left-color: color'
   expansion: 'border-right-color: #${1:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -362,6 +392,7 @@ children:
     prefix_values: [border]
   displayName: 'border-left-style: style'
   expansion: 'border-left-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -376,6 +407,7 @@ children:
     prefix_values: [border]
   displayName: 'border-left-width: size'
   expansion: 'border-left-width: ${1:1}px'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -390,6 +422,7 @@ children:
     prefix_values: [border]
   displayName: 'border-left: size style color'
   expansion: 'border-left: ${1:1}px ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -404,6 +437,7 @@ children:
     prefix_values: [border]
   displayName: 'border-right-color: color'
   expansion: 'border-right-color: #${1:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -418,6 +452,7 @@ children:
     prefix_values: [border]
   displayName: 'border-right-style: style'
   expansion: 'border-right-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -432,6 +467,7 @@ children:
     prefix_values: [border]
   displayName: 'border-right-width: size'
   expansion: 'border-right-width: ${1:1}px'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -446,6 +482,7 @@ children:
     prefix_values: [border]
   displayName: 'border-right: size style color'
   expansion: 'border-right: ${1:1}px ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -460,6 +497,7 @@ children:
     prefix_values: [border]
   displayName: 'border-style: style'
   expansion: 'border-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -474,6 +512,7 @@ children:
     prefix_values: [border]
   displayName: 'border-top-color: color'
   expansion: 'border-top-color: #${1:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -488,6 +527,7 @@ children:
     prefix_values: [border]
   displayName: 'border-top-style: style'
   expansion: 'border-top-style: ${1:none/hidden/dotted/dashed/solid/double/groove/ridge/inset/outset};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -502,6 +542,7 @@ children:
     prefix_values: [border]
   displayName: 'border-top-width: size'
   expansion: 'border-top-width: ${1:1}px'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -516,6 +557,7 @@ children:
     prefix_values: [border]
   displayName: 'border-top: size style color'
   expansion: 'border-top: ${1:1}px ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -530,6 +572,7 @@ children:
     prefix_values: [border]
   displayName: 'border-width: size'
   expansion: 'border-width: ${1:1px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -544,6 +587,7 @@ children:
     prefix_values: [border]
   displayName: 'border: size style color'
   expansion: 'border: ${1:1px} ${2:solid} #${3:999};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -558,6 +602,7 @@ children:
     prefix_values: [clear]
   displayName: 'clear: value'
   expansion: 'clear: ${1:left/right/both/none};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -572,6 +617,7 @@ children:
     prefix_values: [color]
   displayName: 'color: hex'
   expansion: 'color: #${1:DDD};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -586,6 +632,7 @@ children:
     prefix_values: [color]
   displayName: 'color: name'
   expansion: 'color: ${1:red};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -600,6 +647,7 @@ children:
     prefix_values: [color]
   displayName: 'color: rgb'
   expansion: 'color: rgb(${1:255},${2:255},${3:255});$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -614,6 +662,7 @@ children:
     prefix_values: [cursor]
   displayName: 'cursor: type'
   expansion: 'cursor: ${1:default/auto/crosshair/pointer/move/*-resize/text/wait/help};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -628,6 +677,7 @@ children:
     prefix_values: [cursor]
   displayName: 'cursor: url'
   expansion: 'cursor: url($1);$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -642,6 +692,7 @@ children:
     prefix_values: [direction]
   displayName: 'direction: ltr/rtl'
   expansion: 'direction: ${1:ltr/rtl};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -656,6 +707,7 @@ children:
     prefix_values: [display]
   displayName: 'display: block'
   expansion: 'display: block;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -670,6 +722,7 @@ children:
     prefix_values: [display]
   displayName: 'display: common-types'
   expansion: 'display: ${1:none/inline/block/list-item/run-in/compact/marker};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -684,6 +737,7 @@ children:
     prefix_values: [display]
   displayName: 'display: inline'
   expansion: 'display: inline;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -698,6 +752,7 @@ children:
     prefix_values: [display]
   displayName: 'display: table-types'
   expansion: 'display: ${1:table/inline-table/table-row-group/table-header-group/table-footer-group/table-row/table-column-group/table-column/table-cell/table-caption};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -713,6 +768,7 @@ children:
   displayName: 'filter: AlphaImageLoader [for IE PNGs]'
   expansion: "${3:background-image: none;\n  }filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1:${TM_SELECTED_TEXT:/images/transparent.png}}',\
     \ sizingMethod='${2:image/scale/crop}');"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -727,6 +783,7 @@ children:
     prefix_values: [float]
   displayName: 'float: left/right/none'
   expansion: 'float: ${1:left/right/none};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -748,6 +805,7 @@ children:
     ${3:left: expression(eval(document.documentElement.scrollLeft));
 
     }${4:width: expression(eval(document.documentElement.clientWidth));}$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -762,6 +820,7 @@ children:
     prefix_values: [font]
   displayName: 'font-family: family'
   expansion: 'font-family: ${1:Arial, "MS Trebuchet"}, ${2:sans-}serif;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -776,6 +835,7 @@ children:
     prefix_values: [font]
   displayName: 'font-size: size'
   expansion: 'font-size: ${1:100%};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -790,6 +850,7 @@ children:
     prefix_values: [font]
   displayName: 'font-style: normal/italic/oblique'
   expansion: 'font-style: ${1:normal/italic/oblique};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -804,6 +865,7 @@ children:
     prefix_values: [font]
   displayName: 'font-variant: normal/small-caps'
   expansion: 'font-variant: ${1:normal/small-caps};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -818,6 +880,7 @@ children:
     prefix_values: [font]
   displayName: 'font-weight: weight'
   expansion: 'font-weight: ${1:normal/bold};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -833,6 +896,7 @@ children:
   displayName: 'font: style variant weight size/line-height font-family'
   expansion: 'font: ${1:normal/italic/oblique} ${2:normal/small-caps} ${3:normal/bold}
     ${4:1em/1.5em} ${5:Arial}, ${6:sans-}serif;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -847,6 +911,7 @@ children:
     prefix_values: [font]
   displayName: 'font: size font'
   expansion: 'font: ${1:75%} ${2:"Lucida Grande", "Trebuchet MS", Verdana,} ${3:sans-}serif;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -861,6 +926,7 @@ children:
     prefix_values: [letter]
   displayName: 'letter-spacing: em'
   expansion: 'letter-spacing: $1em;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -875,6 +941,7 @@ children:
     prefix_values: [letter]
   displayName: 'letter-spacing: px'
   expansion: 'letter-spacing: $1px;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -889,6 +956,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-image: url'
   expansion: 'list-style-image: url($1);$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -903,6 +971,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-position: pos'
   expansion: 'list-style-position: ${1:inside/outside};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -917,6 +986,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-type: asian'
   expansion: 'list-style-type: ${1:cjk-ideographic/hiragana/katakana/hiragana-iroha/katakana-iroha};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -931,6 +1001,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-type: marker'
   expansion: 'list-style-type: ${1:none/disc/circle/square};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -945,6 +1016,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-type: numeric'
   expansion: 'list-style-type: ${1:decimal/decimal-leading-zero/zero};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -959,6 +1031,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-type: other'
   expansion: 'list-style-type: ${1:hebrew/armenian/georgian};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -973,6 +1046,7 @@ children:
     prefix_values: [list]
   displayName: 'list-style-type: roman-alpha-greek'
   expansion: 'list-style-type: ${1:lower-roman/upper-roman/lower-alpha/upper-alpha/lower-greek/lower-latin/upper-latin};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -988,6 +1062,7 @@ children:
   displayName: 'list-style: type position image'
   expansion: 'list-style: ${1:none/disc/circle/square/decimal/zero} ${2:inside/outside}
     url($3);$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1002,6 +1077,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin-bottom: length'
   expansion: 'margin-bottom: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1016,6 +1092,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin-left: length'
   expansion: 'margin-left: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1030,6 +1107,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin-right: length'
   expansion: 'margin-right: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1044,6 +1122,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin-top: length'
   expansion: 'margin-top: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1058,6 +1137,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin: all'
   expansion: 'margin: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1072,6 +1152,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin: T R B L'
   expansion: 'margin: ${1:20px} ${2:0px} ${3:40px} ${4:0px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1086,6 +1167,7 @@ children:
     prefix_values: [margin]
   displayName: 'margin: V H'
   expansion: 'margin: ${1:20px} ${2:0px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1100,6 +1182,7 @@ children:
     prefix_values: [marker]
   displayName: 'marker-offset: auto'
   expansion: 'marker-offset: auto;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1114,6 +1197,7 @@ children:
     prefix_values: [marker]
   displayName: 'marker-offset: length'
   expansion: 'marker-offset: ${1:10px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1129,6 +1213,7 @@ children:
   displayName: 'opacity: [for Safari, FF & IE]'
   expansion: "opacity: ${1:0.5};${100:\n  }-moz-opacity: ${1:0.5};${100:\n  }filter:alpha(opacity=${2:${1/(1?)0?\\\
     .(.*)/$1$2/}${1/^\\d*\\.\\d\\d+$|^\\d*$|(^\\d\\.\\d$)/(?1:0)/}});$0"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1143,6 +1228,7 @@ children:
     prefix_values: [overflow]
   displayName: 'overflow: type'
   expansion: 'overflow: ${1:visible/hidden/scroll/auto};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1157,6 +1243,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding-bottom: length'
   expansion: 'padding-bottom: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1171,6 +1258,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding-left: length'
   expansion: 'padding-left: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1185,6 +1273,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding-right: length'
   expansion: 'padding-right: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1199,6 +1288,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding-top: length'
   expansion: 'padding-top: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1213,6 +1303,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding: all'
   expansion: 'padding: ${1:20px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1227,6 +1318,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding: T R B L'
   expansion: 'padding: ${1:20px} ${2:0px} ${3:40px} ${4:0px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1241,6 +1333,7 @@ children:
     prefix_values: [padding]
   displayName: 'padding: V H'
   expansion: 'padding: ${1:20px} ${2:0px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1255,6 +1348,7 @@ children:
     prefix_values: [position]
   displayName: 'position: type'
   expansion: 'position: ${1:static/relative/absolute/fixed};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1269,6 +1363,7 @@ children:
     prefix_values: ['{']
   displayName: properties { } ( } )
   expansion: "{\n    /* $1 */\n    $0\n  "
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1297,6 +1392,7 @@ children:
     scrollbar-shadow-color:     ${9:#999999};
 
     scrollbar-darkshadow-color: ${8:#666666};}'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1312,6 +1408,7 @@ children:
   displayName: selection
   expansion: "$1::-moz-selection,\n$1::selection {\n  color: ${2:inherit};\n  background:\
     \ ${3:inherit};\n}"
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1326,6 +1423,7 @@ children:
     prefix_values: [text]
   displayName: 'text-align: left/center/right'
   expansion: 'text-align: ${1:left/right/center/justify};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1340,6 +1438,7 @@ children:
     prefix_values: [text]
   displayName: 'text-decoration: none/underline/overline/line-through/blink'
   expansion: 'text-decoration: ${1:none/underline/overline/line-through/blink};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1354,6 +1453,7 @@ children:
     prefix_values: [text]
   displayName: 'text-indent: length'
   expansion: 'text-indent: ${1:10}px;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1368,6 +1468,7 @@ children:
     prefix_values: [text]
   displayName: 'text-shadow: color-hex x y blur'
   expansion: 'text-shadow: #${1:DDD} ${2:10px} ${3:10px} ${4:2px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1382,6 +1483,7 @@ children:
     prefix_values: [text]
   displayName: 'text-shadow: color-rgb x y blur'
   expansion: 'text-shadow: rgb(${1:255},${2:255},${3:255}) ${4:10px} ${5:10px} ${6:2px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1396,6 +1498,7 @@ children:
     prefix_values: [text]
   displayName: 'text-shadow: none'
   expansion: 'text-shadow: none;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1410,6 +1513,7 @@ children:
     prefix_values: [text]
   displayName: 'text-transform: capitalize/upper/lower'
   expansion: 'text-transform: ${1:capitalize/uppercase/lowercase};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1424,6 +1528,7 @@ children:
     prefix_values: [text]
   displayName: 'text-transform: none'
   expansion: 'text-transform: none;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1438,6 +1543,7 @@ children:
     prefix_values: [vertical]
   displayName: 'vertical-align: type'
   expansion: 'vertical-align: ${1:baseline/sub/super/top/text-top/middle/bottom/text-bottom/length/%};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1452,6 +1558,7 @@ children:
     prefix_values: [visibility]
   displayName: 'visibility: type'
   expansion: 'visibility: ${1:visible/hidden/collapse};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1466,6 +1573,7 @@ children:
     prefix_values: [white]
   displayName: 'white-space: normal/pre/nowrap'
   expansion: 'white-space: ${1:normal/pre/nowrap};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1480,6 +1588,7 @@ children:
     prefix_values: [word]
   displayName: 'word-spacing: length'
   expansion: 'word-spacing: ${1:10px};$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1494,6 +1603,7 @@ children:
     prefix_values: [word]
   displayName: 'word-spacing: normal'
   expansion: 'word-spacing: normal;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1508,6 +1618,7 @@ children:
     prefix_values: [z]
   displayName: 'z-index: index'
   expansion: 'z-index: $1;$0'
+  input: [none]
   inputPath: null
   keyBindingMap: null
   outputPath: null
@@ -1516,10 +1627,20 @@ children:
   runType: current_thread
   scope: source.css
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
-  displayName: CSS Template, filetype: '*.css', inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: CSS Template
+  filetype: '*.css'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: &id005 {}
