@@ -16,6 +16,11 @@ bundle do |bundle|
   # FIXME Textmate had none defined, does re-using the folding regexps make sense?
   # bundle.indent['source.css'] = folding_start_marker, folding_stop_marker
 
+  # Indentation
+  increase_indent_pattern = /\{$/
+  decrease_indent_pattern = /^\}/
+  bundle.indent['source.css'] = increase_indent_pattern, decrease_indent_pattern
+
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|
     # this menu should be shown when any of the following scopes is active:
