@@ -50,13 +50,12 @@ children:
   displayName: CSS
   path: bundle.rb
   scope: source.css
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-5eec2e13-794d-45a7-9342-038d4f9d9cb5,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-0201b522-e37a-498f-a087-c8788274d5ff,
   path: bundle.rb, scope: source.css}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-eba5ee25-44e8-46ef-938e-870ac963d4e8
-  pairs: [&id002 '"', *id002, (, ), '{', '}', '[', ']', &id003 '''', *id003, &id004 '`',
-    *id004]
+  displayName: smart_typing_pairs-c84905ec-ab3f-4852-bb68-382ff87e0b56
+  pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.css
 - !!com.aptana.scripting.model.CommandElement
@@ -1643,14 +1642,14 @@ children:
   workingDirectoryType: UNDEFINED
 copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
-decreaseIndentMarkers: &id005 {}
+decreaseIndentMarkers: {!scope 'source.css': !regexp '(?-mix:(?<!\*)\*\*\/|^\s*\})'}
 description: CSS bundle for RadRails
 displayName: CSS
-fileTypeRegistry: *id005
+fileTypeRegistry: &id002 {}
 fileTypes: *id001
-foldingStartMarkers: *id005
-foldingStopMarkers: *id005
-increaseIndentMarkers: *id005
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: {!scope 'source.css': !regexp '(?-mix:\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S)))'}
 license: null
 licenseUrl: null
 path: bundle.rb
