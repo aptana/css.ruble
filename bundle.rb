@@ -9,17 +9,12 @@ bundle do |bundle|
   bundle.description = "CSS bundle for RadRails"
   bundle.repository = "git://github.com/aptana/css.ruble.git"
   # Set up folding. Folding is now done in Java code for this language
-  # folding_start_marker = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
-  # folding_stop_marker = /(?<!\*)\*\*\/|^\s*\}/
+  folding_start_marker = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
+  folding_stop_marker = /(?<!\*)\*\*\/|^\s*\}/
   # bundle.folding['source.css'] = folding_start_marker, folding_stop_marker
   # Indentation
   # FIXME Textmate had none defined, does re-using the folding regexps make sense?
-  # bundle.indent['source.css'] = folding_start_marker, folding_stop_marker
-
-  # Indentation
-  increase_indent_pattern = /\{$/
-  decrease_indent_pattern = /^\}/
-  bundle.indent['source.css'] = increase_indent_pattern, decrease_indent_pattern
+  bundle.indent['source.css'] = folding_start_marker, folding_stop_marker
 
   # most commands install into a dedicated CSS menu
   bundle.menu "CSS" do |css_menu|
