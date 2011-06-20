@@ -1,6 +1,6 @@
 require 'ruble'
 
-with_defaults :scope => "source.css" do
+with_defaults :scope => "meta.property-list.css" do
   
   snippet "!important CSS" do |s|
     s.trigger = "!"
