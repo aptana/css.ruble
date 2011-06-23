@@ -133,11 +133,11 @@ children:
   displayName: CSS
   path: bundle.rb
   scope: source.css
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-174fbbd5-1f99-4244-961f-be6dc4afbe6c,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-03da6ad6-b73c-4ed8-8668-a52a309c6f69,
   path: bundle.rb, scope: source.css}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-d6546c02-a1da-402d-a537-505f8bada53c
+  displayName: smart_typing_pairs-b8dbcff6-bf5b-40f6-b052-0f9e841f87e2
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.css
