@@ -360,13 +360,14 @@ ${3:left: expression(eval(document.documentElement.scrollLeft));
     s.trigger = "marker"
     s.expansion = 'marker-offset: ${1:10px};$0'
   end
-  # FIXME Doesn't work
-  snippet "opacity: [for Safari, FF & IE]" do |s|
-    s.trigger = "opacity"
-    s.expansion = 'opacity: ${1:0.5};${100:
-  }-moz-opacity: ${1:0.5};${100:
-  }filter:alpha(opacity=${2:${1/(1?)0?\.(.*)/$1$2/}${1/^\d*\.\d\d+$|^\d*$|(^\d\.\d$)/(?1:0)/}});$0'
-  end
+
+  # FIXME Not currently working due to unsupported TextMate functionality
+  # snippet "opacity: [for Safari, FF & IE]" do |s|
+    # s.trigger = "opacity"
+    # s.expansion = 'opacity: ${1:0.5};${100:
+  # }-moz-opacity: ${1:0.5};${100:
+  # }filter:alpha(opacity=${2:${1/(1?)0?\.(.*)/$1$2/}${1/^\d*\.\d\d+$|^\d*$|(^\d\.\d$)/(?1:0)/}});$0'
+  # end
   
   snippet "overflow: type" do |s|
     s.trigger = "overflow"
