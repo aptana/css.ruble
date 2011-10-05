@@ -1,89 +1,6 @@
 !!com.aptana.scripting.model.BundleElement
 author: Christopher Williams
 children:
-- !command
-  async: false
-  customProperties: null
-  displayName: Documentation for Property
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+H]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/docs_for_property.rb
-  runType: current_thread
-  scope: source.css
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Format CSS Single-line
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: replace_selection
-  path: commands/format_css_singleline.rb
-  runType: current_thread
-  scope: source.css
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Insert Color...
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+C]
-  outputPath: null
-  outputType: replace_selection
-  path: commands/insert_color.rb
-  runType: current_thread
-  scope: source.css
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Preview
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/preview.rb
-  runType: current_thread
-  scope: source.css
-  workingDirectoryType: UNDEFINED
-- !command
-  async: false
-  customProperties: null
-  displayName: Validate Selected CSS
-  input: [selection]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [M1+SHIFT+V]
-  outputPath: null
-  outputType: show_as_html
-  path: commands/validate_selected_css.rb
-  runType: current_thread
-  scope: source.css
-  workingDirectoryType: UNDEFINED
-- !template
-  async: false
-  customProperties: null
-  displayName: CSS Template
-  filetype: '*.css'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
-  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children: &id001 []
@@ -133,14 +50,83 @@ children:
   displayName: CSS
   path: bundle.rb
   scope: source.css
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-73196d42-4e6b-497f-a85e-02783db83647,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-42dd8202-de8c-40d1-8c7f-0441d59fefa3,
   path: bundle.rb, scope: source.css}
 - !!com.aptana.scripting.model.SmartTypingPairsElement
   customProperties: null
-  displayName: smart_typing_pairs-1413d679-a2e4-47fb-81b8-6707c048f770
+  displayName: smart_typing_pairs-71729838-353a-40d2-8117-9403faad44d3
   pairs: ['"', '"', (, ), '{', '}', '[', ']', '''', '''', '`', '`']
   path: bundle.rb
   scope: source.css
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Documentation for Property
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+H]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/docs_for_property.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Format CSS Single-line
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/format_css_singleline.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Insert Color...
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+C]
+  outputPath: null
+  outputType: replace_selection
+  path: commands/insert_color.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Preview
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+M2+P]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/preview.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Validate Selected CSS
+  input: [selection]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [M1+SHIFT+V]
+  outputPath: null
+  outputType: show_as_html
+  path: commands/validate_selected_css.rb
+  runType: current_thread
+  scope: source.css
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
   customProperties:
@@ -1624,15 +1610,29 @@ children:
   runType: current_thread
   scope: meta.property-list.css
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: CSS Template
+  filetype: '*.css'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: Copyright 2010 Aptana Inc. Distributed under the MIT license.
 customProperties: null
 decreaseIndentMarkers: {!scope 'source.css': !regexp '(?-mix:(?<!\*)\*\*\/|^\s*\})'}
 description: CSS bundle for RadRails
 displayName: CSS
-fileTypeRegistry: {}
-fileTypes: []
-foldingStartMarkers: {}
-foldingStopMarkers: {}
+fileTypeRegistry: &id002 {}
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
 increaseIndentMarkers: {!scope 'source.css': !regexp '(?-mix:\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S)))'}
 license: null
 licenseUrl: null
