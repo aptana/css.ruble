@@ -1,7 +1,7 @@
 require 'ruble'
 require 'ruble/ui'
  
-command "Insert Color..." do |cmd|
+command t(:insert_color) do |cmd|
   cmd.key_binding = "M1+M2+C"
   cmd.output = :replace_selection
   cmd.input = :selection 

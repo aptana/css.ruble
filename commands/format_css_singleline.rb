@@ -1,6 +1,6 @@
 require 'ruble'
  
-command "Format CSS Single-line" do |cmd|
+command t(:format_single_line) do |cmd|
   cmd.output = :replace_selection
   cmd.input = :selection 
   cmd.scope = "source.css"

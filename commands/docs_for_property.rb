@@ -3,7 +3,7 @@ require 'ruble'
 #
 # Lookup current word as a CSS property on w3c.org
 #
-command "Documentation for Property" do |cmd|
+command t(:docs_for_property) do |cmd|
   cmd.key_binding = "M1+M2+H"
   cmd.output = :show_as_html
   cmd.input = :selection 
