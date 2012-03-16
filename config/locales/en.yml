@@ -1,0 +1,8 @@
+en:
+  bundle_name: 'CSS'
+  docs_for_property: "Documentation for Property"
+  validate: "Validate Selected CSS"
+  preview: "Preview"
+  insert_color: "Insert Color..."
+  format_single_line: "Format CSS Single-line"
+  css_template: "CSS Template"

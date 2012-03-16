@@ -1,6 +1,6 @@
 require 'ruble'
  
-command "Preview" do |cmd|
+command t(:preview) do |cmd|
   cmd.key_binding = "M1+M2+P"
   cmd.output = :show_as_html
   cmd.input = :selection 
