@@ -2,10 +2,10 @@ require 'ruble'
 require 'ruble/ui'
  
 command t(:insert_color) do |cmd|
-  cmd.key_binding = "M1+M2+C"
-  cmd.output = :replace_selection
-  cmd.input = :selection 
-  cmd.scope = "source.css"
+  cmd.key_binding = 'M1+M2+C'
+  cmd.scope = 'source.css'
+  cmd.output = :insert_as_text
+  cmd.input = :none
   cmd.invoke do |context|
     colour = $stdin.read
     if colour.length > 0 and colour[0] != ?#
