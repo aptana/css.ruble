@@ -14,6 +14,7 @@ bundle do |bundle|
   indent_regexp = /\/\*\*(?!\*)|\{\s*($|\/\*(?!.*?\*\/.*\S))/
   dedent_regexp = /\*\*\/|^\s*\}/
   bundle.indent['source.css'] = indent_regexp, dedent_regexp
+  bundle.indent['source.tss'] = indent_regexp, dedent_regexp
 
   # most commands install into a dedicated CSS menu
   bundle.menu t(:bundle_name) do |css_menu|
